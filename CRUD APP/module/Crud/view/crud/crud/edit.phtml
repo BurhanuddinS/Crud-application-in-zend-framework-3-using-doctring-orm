@@ -1,0 +1,18 @@
+<?php
+$form = $this->form;
+$form->prepare();
+?>
+
+<?= $this->form()->openTag($form); ?>
+	
+<?= $this->formLabel($form->get('name')); ?>
+<?= $this->formElement($form->get('name')); ?>
+<?= $this->formElementErrors($form->get('name')); ?>                  
+	
+<?= $this->formLabel($form->get('company')); ?>
+<?= $this->formElement($form->get('company')); ?>
+<?= $this->formElementErrors($form->get('company')); ?>
+   
+<?= $this->formElement($form->get('submit')); ?>
+	
+<?= $this->form()->closeTag(); ?>
